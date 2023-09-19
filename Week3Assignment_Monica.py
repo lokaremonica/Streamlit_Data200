@@ -1,7 +1,3 @@
-import matplotlib.pyplot as plt
-import pandas as pd
-import numpy as np
-
 data = pd.read_csv('mountain_flowers.csv')
 df = pd.DataFrame(data)
 #creating two seperate bar graphs for length and width of flower petals
