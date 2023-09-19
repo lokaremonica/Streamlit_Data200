@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import pandas as pd
+import streamlit as st
 
 data = pd.read_csv('mountain_flowers.csv')
 df = pd.DataFrame(data)
