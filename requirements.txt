@@ -1,3 +1,4 @@
-import matplotlib.pyplot as plt
-import pandas as pd
-import numpy as np
+pandas==1.5.3
+streamlit
+numpy==1.24.3
+matplotlib==3.7.1
