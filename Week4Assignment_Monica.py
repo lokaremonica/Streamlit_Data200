@@ -4,7 +4,9 @@ Program to display bar graph for mountain flowers
 import streamlit as st
 import matplotlib.pyplot as plt
 data = pd.read_csv('mountain_flowers.csv')
-#creating two seperate bar graphs for length and width of flower petals
+st.title("Hello! Here's the table details")
+st.write(data)
+#creating two separate bar graphs for length and width of flower petals
 X = list(data.iloc[:, 2])
 Y = list(data.iloc[:,0])
 Y1 = list(data.iloc[:,1])
@@ -19,5 +21,4 @@ ax2.set_title("Box Plot Flowers vs Petal Length")
 ax2.set_ylabel("Petal Length")
 plt.setp(ax2.xaxis.get_majorticklabels(), rotation=45)
 plt.tight_layout(pad=0.4)
-st.title("Hello! Here's the graph details")
-st.write(data)
+st.pyplot(plt)
