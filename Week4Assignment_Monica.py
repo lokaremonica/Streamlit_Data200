@@ -5,7 +5,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 data = pd.read_csv('mountain_flowers.csv')
-st.title("Hello! Here's the table details")
+st.title("Hello! Here's the mountain flower table details")
 st.write(data)
 #creating two separate bar graphs for length and width of flower petals
 X = list(data.iloc[:, 2])
